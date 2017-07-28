@@ -4,7 +4,10 @@
 
 .footer {
   &.is-position {
-    max-width: 100%;
+    max-width: 92%;
+    margin-top: 80px;
+    margin-bottom: 80px;
     text-align: right;
+    @media (max-width: 1140px) { max-width: 100%; text-align: center;}
   }
 }

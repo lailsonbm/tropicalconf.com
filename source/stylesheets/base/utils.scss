@@ -2,6 +2,10 @@
 // Utils                                   (Base styles) //
 ///////////////////////////////////////////////////////////
 
-hr {
-  border-top: 2px solid #ff5512;
+@mixin clearfix {
+  &::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
 }

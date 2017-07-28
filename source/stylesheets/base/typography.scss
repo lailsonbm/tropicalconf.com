@@ -4,7 +4,7 @@
 
 // Import font faces from Google.
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,900');
 
 // Font families.
 $montserrat: "Montserrat", "sans-serif";
@@ -28,10 +28,12 @@ html, body {
   text-rendering: optimizeLegibility;
 }
 
+hr { border-top: 2px solid #ff5512; }
 small { display: none; }
 
 p {
   padding: 0;
+  margin: 0;
   color: $dark-blue;
 }
 
@@ -42,6 +44,7 @@ address {
 
 a {
   padding: 0;
+  margin: 0;
   color: $link-color;
   text-decoration: none;
   &:hover {
@@ -50,24 +53,91 @@ a {
   }
 }
 
+.button-link {
+  width: 200px;
+  padding: 10;
+  margin: auto;
+  color: $white;
+  text-decoration: none;
+  &:hover {
+    padding: 0;
+    color: $white;
+  }
+  &:active {
+    outline: 0;
+  }
+}
+
+li {
+  font-size: .9rem;
+}
+
 .is-title {
+  width: 4em;
+  margin-right: 10px;
   color: $dark-blue;
   font-family: $montserrat;
   font-weight: $black;
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 3.3rem;
+  line-height: 1;
   text-transform: uppercase;
+  @media (max-width: 1400px) { font-size: 2.8rem;}
+  @media (max-width: 1250px) { font-size: 2.5rem; }
+  @media (max-width: 800px) { font-size: 3.4rem; }
+  @media (max-width: 560px) { font-size: 3rem; }
+  @media (max-width: 400px) { font-size: 2.5rem; }
 }
 
 .is-date {
   color: $dark-blue;
   font-family: $montserrat;
   font-weight: $black;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
+  line-height: 1;
+  @media (max-width: 850px) {font-size: 4rem;}
+  @media (max-width: 400px) {font-size: 2.5rem;}
 }
 
 .is-location {
   color: $orange;
   text-align: right;
-  width: 140px;
+  @media (max-width: 850px) {
+    width: 140px;
+    font-size: 1.3rem;
+  }
+}
+
+.has-hidden-font {
+  font-size: 0;
+  line-height: 0;
+}
+
+.of-error404 {
+  z-index: 999;
+  width: 10em;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: $dark-blue;
+  font-family: $montserrat;
+  font-weight: $black;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.of-sub {
+  width: 17em;
+  margin: auto;
+  margin-top: 4px;
+  color: $dark-blue;
+  font-family: $fira-mono;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  text-align: center;
+}
+
+
+footer {
+  font-size: 0.9rem;
 }

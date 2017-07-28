@@ -1,0 +1,137 @@
+///////////////////////////////////////////////////////////
+// Buttons                                      (Module) //
+///////////////////////////////////////////////////////////
+
+@mixin button-skeleton() {
+  color: $white;
+  font-family: $fira-mono;
+  font-weight: $medium;
+  font-size: $size-base;
+  &:hover {
+    cursor: pointer;
+    background-color: $dark-blue;
+    border: 5px solid $orange;
+  }
+  &:focus {
+    background-color: $dark-blue;
+    border: 0;
+    outline: none;
+  }
+}
+
+.button {
+  &.of-registration {
+    position: relative;
+    display: inline;
+    width: 300px;
+    height: 50px;
+    margin-left: auto;
+    color: $white;
+    font-family: $fira-mono;
+    font-weight: $medium;
+    font-size: $size-base;
+    background-color: $orange;
+    border: 0;
+    transition: all .4s cubic-bezier(.42, 0, .58, 1);
+    @media (max-width: 850px) {
+      width: 100%;
+      margin-top: 50px;
+    }
+    &:hover {
+      color: $white;
+      cursor: pointer;
+      background-color: transparent;
+      border: solid 2px $dark-blue;
+    }
+    &:hover::before {
+      right: 0%;
+      left: auto;
+      width: 100%;
+    }
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: inline;
+      width: 0;
+      height: 100%;
+      color: #dark-blue !important;
+      background: $dark-blue;
+      content: "";
+      transition: all .4s cubic-bezier(.42, 0, .58, 1);
+      &:focus {
+        border: 0;
+        outline: none;
+      }
+      &:active {
+        outline: none;
+      }
+}
+  }
+
+  &.of-subscription {
+    @include button-skeleton();
+    width: 70px;
+    height: 51px;
+    margin-top: -10p;
+    margin-left: -70px;
+    background-color: $orange;
+    border: 0;
+    border-radius: 0 50px 50px 0;
+    &:hover {
+      background-color: $valid-green;
+      border: 0;
+}
+}
+}
+.button {
+  &.of-home {
+    position: relative;
+    z-index: 999;
+    display: inline;
+    width: 200px;
+    height: 40px;
+    margin: auto;
+    margin-top: 40px;
+    color: $white;
+    font-family: $fira-mono;
+    font-weight: $medium;
+    font-size: .7rem;
+    background-color: $orange;
+    border: 0;
+    transition: all .4s cubic-bezier(.42, 0, .58, 1);
+    @media (max-width: 850px) {
+      width: 100%;
+      margin-top: 50px;
+    }
+    &:hover {
+      color: $white;
+      cursor: pointer;
+      background-color: transparent;
+      border: solid 2px $dark-blue;
+    }
+    &:hover::before {
+      right: 0%;
+      left: auto;
+      width: 100%;
+    }
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: inline;
+      width: 0;
+      height: 100%;
+      color: #dark-blue !important;
+      background: $dark-blue;
+      content: "";
+      transition: all .4s cubic-bezier(.42, 0, .58, 1);
+      &:focus {
+        border: 0;
+        outline: none;
+      }
+}
+}
+}
