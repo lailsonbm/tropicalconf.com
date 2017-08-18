@@ -1,33 +1,29 @@
 ///////////////////////////////////////////////////////////
 // Icons                                        (Module) //
 ///////////////////////////////////////////////////////////
-.icon.of-pin {
+.of-pin {
   position: relative;
   float: left;
-  width: 60px;
-  margin-top: 0px;
+  width: 50px;
 }
 
-.icon.of-arrow {
-  margin-top: -2px;
-}
+.icon.of-arrow { margin-top: -2px; }
 
 .icon {
   &.is-active {
     margin: 0;
-    @media (max-width: 1140px) {
-      font-size: 0;
-    }
+    @media (max-width: 1140px) { font-size: 0; }
   }
   &.of-youtube {
     width: 26px;
-    @media (min-width: 1140px) { display: none;}
-}
+    @media (min-width: 1140px) { display: none; }
+  }
   &.of-facebook {
     width: 26px;
-    @media (min-width: 1140px) { display: none;}
-}
+    @media (min-width: 1140px) { display: none; }
+  }
   &.of-twitter {
-    width: 26px;@media (min-width: 1140px) { display: none;}
-}
+    width: 26px;
+    @media (min-width: 1140px) { display: none; }
+  }
 }

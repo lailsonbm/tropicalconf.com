@@ -4,37 +4,69 @@
 
 .figure {
   &.is-logo {
-    &.of-inloco {
-      width: 140px;
-    }
+    &.of-inloco { width: 140px; }
     &.of-guava {
       align-self: flex-end;
       width: 100px;
-    }
+      }
     &.of-tropicalconf {
       display: block;
       width: 60%;
       margin: auto;
       margin-top: 20px;
-      @media (max-width: 1140px) {margin-top: -180px;}
-      @media (max-width: 950px) { width: 60%; margin-top: -180px; }
-      @media (max-width: 850px) { width: 70%; margin-top: 10px; }
-      @media (max-width: 560px) { width: 90%; margin-top: 60px; }
+      @media (max-width: 1140px) { margin-top: -180px;}
+      @media (max-width: 950px) {
+        width: 60%;
+        margin-top: -180px;
+      }
+      @media (max-width: 850px) {
+        width: 70%;
+        margin-top: 10px;
+      }
+      @media (max-width: 560px) {
+        width: 90%;
+        margin-top: 60px;
+      }
     }
   }
   &.of-recife-antigo {
     width: 110%;
-    @media (max-width: 1140px) {width: 45%; margin: auto; margin-top: -60px;}
-    @media (max-width: 950px) {width: 50%; margin: auto; margin-top: -50px;}
-    @media (max-width: 850px) {width: 80%; margin: auto; margin-top: 20px;}
-    @media (max-width: 700px) {width: 110%; margin: auto; margin-top: -40px; margin-left: -5%;}
-    @media (max-width: 560px) {width: 110%; margin: auto; margin-top: -50px; margin-left: -5%;}
+    @media (max-width: 1140px) {
+      width: 45%;
+      margin: auto;
+      margin-top: -60px;
+    }
+    @media (max-width: 950px) {
+      width: 50%;
+      margin: auto;
+      margin-top: -50px;
+    }
+    @media (max-width: 850px) {
+      width: 80%;
+      margin: auto;
+      margin-top: 20px;
+    }
+    @media (max-width: 700px) {
+      width: 110%;
+      margin: auto;
+      margin-top: -40px;
+      margin-left: -5%;
+    }
+    @media (max-width: 560px) {
+      width: 110%;
+      margin: auto;
+      margin-top: -50px;
+      margin-left: -5%;
+    }
   }
   &.is-big {
     width: 600px;
     margin-top: 40px;
     @media (max-width: 1140px) {width: 500px;}
-    @media (max-width: 950px) {width: 400px; margin-top: 80px;}
+    @media (max-width: 950px) {
+      width: 400px;
+      margin-top: 80px;
+    }
   }
   &.of-tropicalconf-brand {
     display: block;
