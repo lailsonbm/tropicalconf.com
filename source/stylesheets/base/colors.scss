@@ -12,3 +12,7 @@ $valid-green:          #53be1c;
 $link-color:           $dark-blue;
 $link-hover-color:     $orange;
 $text-color:           $black;
+
+::selection {
+  background: lighten($orange, 40%);
+}

@@ -35,6 +35,30 @@ p {
   padding: 0;
   margin: 0;
   color: $dark-blue;
+  &.is-orange {
+    width: 15em;
+    color: $orange;
+    font-size: 1.3rem;
+    @media (min-width: 560px) {
+      width: 23em;
+      font-size: 1rem;
+    }
+}
+}
+
+h2 {
+  width: 40em;
+  padding-right: 50px;
+  margin: 0;
+  color: $dark-blue;
+  font-size: 1.5rem;
+  @media (max-width: 850px) { width: 14em;}
+}
+
+.of-description {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  @media (min-width: 900px) { font-size: 1rem; }
 }
 
 address {
@@ -44,7 +68,6 @@ address {
 
 a {
   padding: 0;
-  margin: 0;
   color: $link-color;
   text-decoration: none;
   &:hover {
@@ -63,29 +86,24 @@ a {
     padding: 0;
     color: $white;
   }
-  &:active {
-    outline: 0;
-  }
+  &:active { outline: 0; }
 }
 
-li {
-  font-size: .9rem;
-}
+li { font-size: .9rem; }
 
 .is-title {
-  width: 4em;
+  width: 9em;
   margin-right: 10px;
   color: $dark-blue;
   font-family: $montserrat;
   font-weight: $black;
-  font-size: 3.3rem;
+  font-size: 3rem;
   line-height: 1;
   text-transform: uppercase;
-  @media (max-width: 1400px) { font-size: 2.8rem;}
-  @media (max-width: 1250px) { font-size: 2.5rem; }
-  @media (max-width: 800px) { font-size: 3.4rem; }
-  @media (max-width: 560px) { font-size: 3rem; }
-  @media (max-width: 400px) { font-size: 2.5rem; }
+  @media (min-width: 900px) {
+    font-size: 2rem;
+    width: 5em;
+    }
 }
 
 .is-date {
@@ -99,6 +117,9 @@ li {
 }
 
 .is-location {
+  width: 250px;
+  margin-top: 10px;
+  margin-left: auto;
   color: $orange;
   text-align: right;
   @media (max-width: 850px) {
@@ -138,6 +159,4 @@ li {
 }
 
 
-footer {
-  font-size: 0.9rem;
-}
+footer { font-size: .9rem; }

@@ -20,15 +20,13 @@ input[type="email"] {
   border-radius: 0 50px 50px 0;
   box-shadow: 0 -5px 70px -5px rgba(0,0,0,.22);
   @media (max-width: 560px) {
-    font-size: .7rem;
+    font-size: 1rem;
   }
   &:focus {
     color: $dark-blue;
     outline: none;
   }
-  &:hover {
-    box-shadow: 0 -1px 43px -5px rgba(55,78,176,.54);
-  }
+  &:hover { box-shadow: 0 -1px 43px -5px rgba(55,78,176,.54); }
   &:required:valid {
     color: $valid-green;
     background: $white url("/images/valid.svg") no-repeat left;
