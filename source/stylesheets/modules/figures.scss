@@ -4,10 +4,14 @@
 
 .figure {
   &.is-logo {
-    &.of-inloco { width: 140px; }
+    &.of-inloco {
+      width: 180px;
+      @media (max-width: 1440px) { width: 140px;}
+    }
     &.of-guava {
       align-self: flex-end;
-      width: 100px;
+      width: 150px;
+      @media (max-width: 1440px) { width: 120px;}
       }
     &.of-tropicalconf {
       display: block;

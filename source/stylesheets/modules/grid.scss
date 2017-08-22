@@ -28,7 +28,7 @@ body {
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
-    @media (max-width: 560px) { width: 100%;}
+    @media (max-width: 560px) { width: 100%; }
   }
   &.at-left {
     position: absolute;
@@ -41,8 +41,8 @@ body {
     background-repeat: repeat;
     background-size: 100%, 200%;
     transition: all .4s linear;
-    @media (max-width: 1400px) { height: 500px;}
-    @media (max-width: 1200px) { height: 450px;}
+    @media (max-width: 1400px) { height: 500px; }
+    @media (max-width: 1200px) { height: 450px; }
     @media (max-width: 1140px) {
       position: relative;
       max-width: 100%;
@@ -154,7 +154,7 @@ body {
   }
   &.with-presentation {
     position: relative;
-    margin-top: 70px;
+    margin-top: 90px;
     color: $white;
     font-size: .7rem;
     @media (max-width: 1140px) {
@@ -188,10 +188,10 @@ body {
   }
   &.is-right-aligned {
     flex-direction: column;
-    height: 230px;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 300px;
+    height: 230px;
     padding: 20px;
     margin-left: auto;
     background: $white;
@@ -200,6 +200,7 @@ body {
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
+      height: 300px;
       margin-top: 20px;
     }
 

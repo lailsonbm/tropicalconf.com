@@ -38,12 +38,20 @@ p {
   &.is-orange {
     width: 15em;
     color: $orange;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     @media (min-width: 560px) {
       width: 23em;
       font-size: 1rem;
     }
 }
+}
+
+strong {
+  padding: 0 5px;
+  font-weight: $black;
+  background-color: lighten($orange, 41%);
+  border: 1px solid $orange;
+
 }
 
 h2 {
@@ -97,12 +105,14 @@ li { font-size: .9rem; }
   color: $dark-blue;
   font-family: $montserrat;
   font-weight: $black;
-  font-size: 3rem;
+  font-size: 2.2rem;
   line-height: 1;
   text-transform: uppercase;
-  @media (min-width: 900px) {
-    font-size: 2rem;
-    width: 5em;
+  @media (min-width: 1100px) {
+    font-size: 2.3rem;
+    }
+  @media (min-width: 1400px) {
+    font-size: 2.7rem;
     }
 }
 
