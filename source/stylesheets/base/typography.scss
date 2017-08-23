@@ -121,7 +121,8 @@ li { font-size: .9rem; }
   font-family: $montserrat;
   font-weight: $black;
   font-size: 3.2rem;
-  line-height: 1;
+  line-height: 1rem;
+  letter-spacing: .4rem;
   @media (max-width: 850px) {font-size: 4rem;}
   @media (max-width: 400px) {font-size: 2.5rem;}
 }
