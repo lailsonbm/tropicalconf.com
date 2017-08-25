@@ -123,6 +123,7 @@ li { font-size: .9rem; }
   font-size: 3.2rem;
   line-height: 1rem;
   letter-spacing: .4rem;
+  margin-top: 10px;
   @media (max-width: 850px) {font-size: 4rem;}
   @media (max-width: 400px) {font-size: 2.5rem;}
 }
@@ -131,7 +132,7 @@ li { font-size: .9rem; }
   width: 250px;
   margin-top: 10px;
   margin-left: auto;
-  color: $orange;
+  color: $dark-blue;
   text-align: right;
   @media (max-width: 850px) {
     width: 140px;
