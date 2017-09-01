@@ -66,8 +66,21 @@ h2 {
 .of-description {
   font-size: 1.3rem;
   line-height: 1.7rem;
+  margin-bottom: 15px;
   @media (min-width: 900px) { font-size: 1rem; }
-}
+  }
+
+.is-speaker-description {
+  display: block;
+  line-height: 1;
+  text-align: left;
+  margin: 0;
+  @media (min-width: 961px) {
+    display: none;
+    text-align: center;
+    margin: 0 10px 0;
+   }
+  }
 
 address {
   padding: 0;
@@ -102,6 +115,7 @@ li { font-size: .9rem; }
 .is-title {
   width: 9em;
   margin-right: 10px;
+  margin-bottom: 10px;
   color: $dark-blue;
   font-family: $montserrat;
   font-weight: $black;
@@ -170,5 +184,25 @@ li { font-size: .9rem; }
   text-align: center;
 }
 
+.of-speaker {
+  margin: 10px auto 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.is-speaker-title {
+  color: $dark-blue;
+  font-family: $montserrat;
+  font-weight: $black;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-top: 0;
+  @media (min-width: 961px) {
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
+}
 
 footer { font-size: .9rem; }
