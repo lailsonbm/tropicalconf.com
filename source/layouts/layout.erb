@@ -8,6 +8,9 @@
     <%= partial 'layouts/favicons.html' %>
     <title><%= current_page.data.title || "TropicalConf" %></title>
     <%= stylesheet_link_tag "gss" %>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <%= javascript_include_tag "flickity.min" %>
+    <%= javascript_include_tag "parallax" %>
     <%= javascript_include_tag "site" %>
   </head>
   <body>

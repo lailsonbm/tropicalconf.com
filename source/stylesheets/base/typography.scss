@@ -139,6 +139,7 @@ li { font-size: .9rem; }
     @media (max-width: 800px) {
       width: 90%;
     }
+    &.at-schedule { margin-top: 0; }
   }
 }
 
@@ -236,6 +237,7 @@ li { font-size: .9rem; }
     line-height: 1.4rem;
     text-align: left;
     @media (max-width: 800px) {
+      margin-top: 20px;
       text-align: center;
     }
   }

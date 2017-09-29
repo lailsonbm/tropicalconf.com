@@ -10,25 +10,23 @@ function Parallax() {
 	});
 
 }
-$(document).on("ready",function(){
+$(function() {
 
 	// função
 	$(window).scroll(function() {
 		Parallax();
 	});
+
+	$('.is-schedule header').click(function(e) {
+		// console.log($(this).parent().children().find('.some').css('display', 'block'));
+		var state = $(this).parent().find('.is-hidden').css('display')
+		var $element = $(this).parent().find('.is-hidden')
+
+		if(state == 'none') {
+			$element.css('display', 'block');
+		} else {
+			$element.css('display', 'none');
+		}
+
+	})
 });
-
-// Accordion
-
-$('.is-schedule header').click(function(e) {
-	// console.log($(this).parent().children().find('.some').css('display', 'block'));
-	var state = $(this).parent().find('.is-hidden').css('display')
-	var $element = $(this).parent().find('.is-hidden')
-
-	if(state == 'none') {
-		$element.css('display', 'block');
-	} else {
-		$element.css('display', 'none');
-	}
-
-})

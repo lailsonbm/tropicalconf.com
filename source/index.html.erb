@@ -107,45 +107,82 @@ title: TropicalConf Pocket Edition 2017
 <!-- Testes de GSS e integração com o layout de filipe a partir daqui! -->
 </main>
 <div class="grid of-schedule">
-<section>
+  <section>
     <h3 class="is-title of-section">Palestrantes</h3>
-      <header>
-        <ul class="is-caroussel">
-          <li>
-            <figure class="figure of-speaker is-unfocused">
-              <img class="figure of-speaker" src="images/juvenal.png" alt="Flávio Juvenal">
-              <figcaption class="has-hidden-font">Foto de Flávio Juvenal</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="figure of-speaker is-unfocused">
-              <img class="figure of-speaker" src="images/luis.png" alt="Luis Felipe Souza">
-              <figcaption class="has-hidden-font">Luis Felipe Souza</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="figure of-speaker is-active">
-              <img class="figure of-speaker" src="images/borba.png" alt="Guilherme Carvalho">
-              <figcaption class="has-hidden-font">Foto de Guilherme Carvalho</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="figure of-speaker is-unfocused">
-              <img class="figure of-speaker" src="images/falconi.png" alt="Guilherme Carvalho">
-              <figcaption class="has-hidden-font">Foto de Guilherme Carvalho</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="figure of-speaker is-unfocused">
-              <img class="figure of-speaker" src="images/guilherme.png" alt="Guilherme Carvalho">
-              <figcaption class="has-hidden-font">Foto de Guilherme Carvalho</figcaption>
-            </figure>
-          </li>
-        </ul>
-      </header>
-      <article class="grid of-keyspeaker is-flex">
+
+    <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }' >
+      <div class="carousel-cell">
+        <figure class="figure of-speaker">
+          <img class="figure of-speaker" src="images/juvenal.png" alt="Flávio Juvenal">
+          <figcaption class="has-hidden-font">Foto de Flávio Juvenal</figcaption>
+        </figure>
+      </div>
+      <div class="carousel-cell">
+        <figure class="figure of-speaker">
+          <img class="figure of-speaker" src="images/luis.png" alt="Luis Felipe Souza">
+          <figcaption class="has-hidden-font">Luis Felipe Souza</figcaption>
+        </figure>
+      </div>
+      <div class="carousel-cell">
+        <figure class="figure of-speaker">
+          <img class="figure of-speaker" src="images/borba.png" alt="Guilherme Carvalho">
+          <figcaption class="has-hidden-font">Foto de Guilherme Carvalho</figcaption>
+        </figure>
+      </div>
+      <div class="carousel-cell">
+        <figure class="figure of-speaker">
+          <img class="figure of-speaker" src="images/falconi.png" alt="Guilherme Carvalho">
+          <figcaption class="has-hidden-font">Foto de Guilherme Carvalho</figcaption>
+        </figure>
+      </div>
+      <div class="carousel-cell">
+        <figure class="figure of-speaker">
+          <img class="figure of-speaker" src="images/guilherme.png" alt="Guilherme Carvalho">
+          <figcaption class="has-hidden-font">Foto de Guilherme Carvalho</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <article class="carousel carousel-main" data-flickity>
+      <div class="grid of-keyspeaker is-flex carousel-cell">
         <div class="section-a">
-          <figure class="figure of-speaker is-selected">
+          <figure>
+            <img class="figure of-speaker is-selected" src="images/juvenal.png" alt="Luiz Borba">
+            <figcaption class="has-hidden-font">Foto de Luiz Borba</figcaption>
+          </figure>
+        </div>
+        <div class="section-b">
+          <h3 class="title of-keyspeaker">Flávio Juvenal</h3>
+          <ul class="social-links">
+            <li><a href="#"></a> /Twitter </a></li>
+            <li><a href="#"></a> /Github </a></li>
+            <!-- <li><a href="#"></a> /Medium </a></li> -->
+          </ul>
+          <p class="description of-keyspeaker">Sócio da <a href="https://www.vinta.com.br/">Vinta Software</a>, consultoria web especializada em construir produtos com Python/Django e React. Apaixonado por alta-qualidade da user experience ao código. Por isso, defenderá produtos contra deadlines absurdos e funcionalidades irracionais.</p>
+        </div>
+      </div>
+
+      <div class="grid of-keyspeaker is-flex carousel-cell">
+        <div class="section-a">
+          <figure>
+            <img class="figure of-speaker is-selected" src="images/luis.png" alt="Luiz Borba">
+            <figcaption class="has-hidden-font">Foto de Luiz Borba</figcaption>
+          </figure>
+        </div>
+        <div class="section-b">
+          <h3 class="title of-keyspeaker">Luis Felipe Souza</h3>
+          <ul class="social-links">
+            <li><a href="#"></a> /Twitter </a></li>
+            <li><a href="#"></a> /Github </a></li>
+            <!-- <li><a href="#"></a> /Medium </a></li> -->
+          </ul>
+          <p class="description of-keyspeaker">Desenvolvedor Front-end desde 2010, hoje trabalha na Magnetis. Gosta de tudo que envolve os produtos digitais, desde UX até o código. É fã de comunidades!</p>
+        </div>
+      </div>
+
+      <div class="grid of-keyspeaker is-flex carousel-cell">
+        <div class="section-a">
+          <figure>
             <img class="figure of-speaker is-selected" src="images/borba.png" alt="Luiz Borba">
             <figcaption class="has-hidden-font">Foto de Luiz Borba</figcaption>
           </figure>
@@ -155,20 +192,57 @@ title: TropicalConf Pocket Edition 2017
           <ul class="social-links">
             <li><a href="#"></a> /Twitter </a></li>
             <li><a href="#"></a> /Github </a></li>
-            <li><a href="#"></a> /Medium </a></li>
+            <!-- <li><a href="#"></a> /Medium </a></li> -->
           </ul>
-          <p class="description of-keyspeaker">Sócio da <a href="https://www.vinta.com.br/">Vinta Software</a>, consultoria web especializada em construir produtos com Python/Django e React. Apaixonado por alta-qualidade da user experience ao código. Por isso, defenderá produtos contra deadlines absurdos e funcionalidades irracionais.</p>
+          <p class="description of-keyspeaker"> Graduado em Ciência da Computação pela UFPE. Já desenvolveu soluções de grande porte para várias empresas “fortune 500”, enquanto trabalhava no CESAR. Também é especialista em metodologias ágeis e apoiou startups e outras empresas no uso de ferramentas de desenvolvimento de negócios. Atualmente trabalha com arquitetura de micro-serviços e programação funcional no NUBANK.</p>
         </div>
-      </article>
+      </div>
+
+      <div class="grid of-keyspeaker is-flex carousel-cell">
+        <div class="section-a">
+          <figure>
+            <img class="figure of-speaker is-selected" src="images/falconi.png" alt="Luiz Borba">
+            <figcaption class="has-hidden-font">Foto de Luiz Borba</figcaption>
+          </figure>
+        </div>
+        <div class="section-b">
+          <h3 class="title of-keyspeaker">Gabriel Falcone</h3>
+          <ul class="social-links">
+            <li><a href="#"></a> /Twitter </a></li>
+            <li><a href="#"></a> /Github </a></li>
+            <!-- <li><a href="#"></a> /Medium </a></li> -->
+          </ul>
+          <p class="description of-keyspeaker">Gabriel Falcone, Co-Fundador, [VP de Engenharia Mobile] e Líder do desenvolvimento dos SDKs da In Loco. Diverte-se explorando as minúcias do Android, tem bastante interessa na visão de futuro da computação ubiqua e contribui desde 2011 na In Loco com objetivo de chegar mais perto desse futuro.</p>
+        </div>
+      </div>
+
+      <div class="grid of-keyspeaker is-flex carousel-cell">
+        <div class="section-a">
+          <figure>
+            <img class="figure of-speaker is-selected" src="images/guilherme.png" alt="Luiz Borba">
+            <figcaption class="has-hidden-font">Foto de Luiz Borba</figcaption>
+          </figure>
+        </div>
+        <div class="section-b">
+          <h3 class="title of-keyspeaker">Guilherme Carvalho</h3>
+          <ul class="social-links">
+            <li><a href="#"></a> /Twitter </a></li>
+            <li><a href="#"></a> /Github </a></li>
+            <!-- <li><a href="#"></a> /Medium </a></li> -->
+          </ul>
+          <p class="description of-keyspeaker">Guilherme Carvalho é fundador e desenvolvedor na Guava Software. Estudou Ciência da Computação no CIn da UFPE e fez mestrado na área de Inteligência Artificial.</p>
+        </div>
+      </div>
+    </article>
   </section>
 
   <section class="schedule-wrapper">
-    <h3 class="is-title of-section">Grade do Evento</h3>
+    <h3 class="is-title of-section at-schedule">Grade do Evento</h3>
 
     <article class="is-schedule">
       <header>
         <div class="is-speaker-header is-non-expandable">
-          <time datetime="2014-09-16T18:20:30">14:00 - 14:15</time>
+          <time datetime="2014-09-16T14:00:00">14:00 - 14:15</time>
           <h3 class="title of-keynote">Abertura</h3>
         </div>
       </header>
@@ -177,7 +251,7 @@ title: TropicalConf Pocket Edition 2017
     <article class="is-schedule">
       <header class="is-speaker-header">
         <div class="time-slot">
-          <time datetime="2017-10-26T14:00:00">14:00 - 14:15</time>
+          <time datetime="2017-10-26T14:20:00">14:20 - 15:00</time>
           <figure class="icon of-arrow-down">
             <img class="is-down" src="images/arrow-down.svg" alt="arrow down">
             <figcaption class="has-hidden-font">icon of a chevron arrow</figcaption>
@@ -203,7 +277,7 @@ title: TropicalConf Pocket Edition 2017
     <article class="is-schedule">
       <header class="is-speaker-header">
         <div class="time-slot">
-          <time datetime="2017-10-26T14:00:00">14:00 - 14:15</time>
+          <time datetime="2017-10-26T14:00:00">15:00 - 15:40</time>
           <figure class="icon of-arrow-down">
             <img src="images/arrow-down.svg" alt="arrow down">
             <figcaption class="has-hidden-font">icon of a chevron arrow</figcaption>
@@ -227,35 +301,18 @@ title: TropicalConf Pocket Edition 2017
     </article>
 
     <article class="is-schedule">
-      <header class="is-speaker-header">
-        <div class="time-slot">
-          <time datetime="2017-10-26T14:00:00">14:00 - 14:15</time>
-          <figure class="icon of-arrow-down">
-            <img src="images/arrow-down.svg" alt="arrow down">
-            <figcaption class="has-hidden-font">icon of a chevron arrow</figcaption>
-          </figure>
+      <header>
+        <div class="is-speaker-header is-non-expandable">
+          <time datetime="2014-09-16T15:40:00">15:40 - 16:20</time>
+          <h3 class="title of-keynote">Palestrante Não Confirmado</h3>
         </div>
-          <h3 class="title of-keynote">O mundo real é imutável</h3>
       </header>
-        <div class="is-speaker-content">
-          <p class="description of-keynote is-hidden">Nós programadores sempre criamos metáforas baseadas no mundo real (físico) para modelar nossas soluções. Essas analogias com o mundo real são importantes para criação de modelos fáceis de serem compreendidos e desenvolvidos. Entretanto, da mesma forma que Khan (Jornada nas Estrelas 2 - A Ira de Khan), apresentava um padrão de raciocínio 2D, esquecendo a terceira dimensão, a maioria de nós também segue esse padrão. Vemos o mundo real como um mundo mutável porque esquecemos de incluir uma dimensão no nosso raciocínio... o tempo... Esta visão incompleta nos leva a modelos mais complexos. Pretendo mostrar nesta apresentação que entendendo o mundo como um mundo imutável, podemos criar modelos mais simples, completos e eficazes.</p>
-          <div class="is-bio">
-            <figure class="is-speaker-picture">
-              <img class="figure of-speaker at-keynote" src="images/borba.png" alt="Foto palestrante fulano de tal">
-              <figcaption class="has-hidden-font">Foto palestrante Luiz Borba</figcaption>
-            </figure>
-            <div class="is-info">
-              <span>Luiz Borba</span>
-              <small class="of-company">Nubank</small>
-            </div>
-          </div>
-        </div>
     </article>
 
     <article class="is-schedule">
       <header>
         <div class="is-speaker-header is-non-expandable">
-          <time datetime="2014-09-16T18:20:30">14:00 - 14:15</time>
+          <time datetime="2014-09-16T16:20:00">16:20 - 17:20</time>
           <h3 class="title of-keynote">Break</h3>
         </div>
       </header>
@@ -264,24 +321,24 @@ title: TropicalConf Pocket Edition 2017
     <article class="is-schedule">
       <header class="is-speaker-header">
         <div class="time-slot">
-          <time datetime="2017-10-26T14:00:00">14:00 - 14:15</time>
+          <time datetime="2017-10-26T17:20:00">17:20 - 18:00</time>
           <figure class="icon of-arrow-down">
             <img src="images/arrow-down.svg" alt="arrow down">
             <figcaption class="has-hidden-font">icon of a chevron arrow</figcaption>
           </figure>
         </div>
-          <h3 class="title of-keynote">Como fazer uma boa biblioteca de API</h3>
+          <h3 class="title of-keynote">Dissecando a arquitetura de um SDK modular</h3>
       </header>
         <div class="is-speaker-content">
-          <p class="description of-keynote is-hidden">Não é fácil fazer boas APIs, sendo API aqui no sentido clássico de Application Programming Interface. Nem sempre é claro como podemos seguir ideais abstratos como elegância no desenvolvimento de APIs. É importante notar que uma API também é uma interface de usuário, pois conecta um(a) desenvolvedor(a) a uma solução reusável. Por isso, nesta palestra vamos avaliar APIs reais com heurísticas de usabilidade, o que deixa bem claro como diferenciar as qualidades de boas APIs.</p>
+          <p class="description of-keynote is-hidden">Já pensou como é desenvolver para programadores atuando em milhões de usuários? Nessa conversa vamos descrever a arquitetura de um dos SDK da In Loco, apresentando os componentes que permitem um rápido desenvolvimento, bem como um sistema a prova de crashes e que é capaz de detectar cenários prejudiciais para os usuários e se corrigir automaticamente.</p>
           <div class="is-bio">
             <figure class="is-speaker-picture">
-              <img class="figure of-speaker at-keynote" src="images/juvenal.png" alt="Foto palestrante fulano de tal">
-              <figcaption class="has-hidden-font">Foto palestrante Flavio Juvenal</figcaption>
+              <img class="figure of-speaker at-keynote" src="images/falconi.png" alt="Foto palestrante fulano de Guilherme Falcone">
+              <figcaption class="has-hidden-font">Foto palestrante Guilherme Falcone</figcaption>
             </figure>
             <div class="is-info">
-              <span>Flavio Juvenal</span>
-              <small class="of-company">Vinta Software</small>
+              <span>Gabriel Falcone</span>
+              <small class="of-company">In Loco</small>
             </div>
           </div>
         </div>
@@ -290,20 +347,20 @@ title: TropicalConf Pocket Edition 2017
     <article class="is-schedule">
       <header class="is-speaker-header">
         <div class="time-slot">
-          <time datetime="2017-10-26T14:00:00">14:00 - 14:15</time>
+          <time datetime="2017-10-26T14:00:00">18:00 - 18:40</time>
           <figure class="icon of-arrow-down">
             <img src="images/arrow-down.svg" alt="arrow down">
             <figcaption class="has-hidden-font">icon of a chevron arrow</figcaption>
           </figure>
         </div>
-          <h3 class="title of-keynote">Transformando o seu site em um PWA</h3>
+          <h3 class="title of-keynote">Encontrando seu sutiã ideal usando IA e Big Data</h3>
       </header>
         <div class="is-speaker-content">
-          <p class="description of-keynote is-hidden">Combinando o melhor da experiência web e o melhor dos aplicativos, pra entregar uma ótima experiência aos usuários.</p>
+          <p class="description of-keynote is-hidden">Nesta palestra irei falar como usamos dados de compra de lingeries para melhorar um algoritmo de sugestão de sutiãs de forma científica. Explicarei como podemos usar ferramentas e metodologias para aplicar inteligência artificial em qualquer projeto.</p>
           <div class="is-bio">
             <figure class="is-speaker-picture">
-              <img class="figure of-speaker at-keynote" src="images/luis.png" alt="Foto palestrante fulano de tal">
-              <figcaption class="has-hidden-font">Foto palestrante Flavio Juvenal</figcaption>
+              <img class="figure of-speaker at-keynote" src="images/guilherme.png" alt="Foto palestrante fulano de tal">
+              <figcaption class="has-hidden-font">Foto palestrante Guilherme Carvalho</figcaption>
             </figure>
             <div class="is-info">
               <span>Luís Felipe Souza</span>
@@ -316,7 +373,7 @@ title: TropicalConf Pocket Edition 2017
     <article class="is-schedule">
       <header class="is-speaker-header">
         <div class="time-slot">
-          <time datetime="2017-10-26T14:00:00">14:00 - 14:15</time>
+          <time datetime="2017-10-26T18:40:00">18:40 - 19:20</time>
           <figure class="icon of-arrow-down">
             <img src="images/arrow-down.svg" alt="arrow down">
             <figcaption class="has-hidden-font">icon of a chevron arrow</figcaption>
@@ -328,7 +385,7 @@ title: TropicalConf Pocket Edition 2017
           <p class="description of-keynote is-hidden">Nós programadores sempre criamos metáforas baseadas no mundo real (físico) para modelar nossas soluções. Essas analogias com o mundo real são importantes para criação de modelos fáceis de serem compreendidos e desenvolvidos. Entretanto, da mesma forma que Khan (Jornada nas Estrelas 2 - A Ira de Khan), apresentava um padrão de raciocínio 2D, esquecendo a terceira dimensão, a maioria de nós também segue esse padrão. Vemos o mundo real como um mundo mutável porque esquecemos de incluir uma dimensão no nosso raciocínio... o tempo... Esta visão incompleta nos leva a modelos mais complexos. Pretendo mostrar nesta apresentação que entendendo o mundo como um mundo imutável, podemos criar modelos mais simples, completos e eficazes.</p>
           <div class="is-bio">
             <figure class="is-speaker-picture">
-              <img class="figure of-speaker at-keynote" src="images/borba.png" alt="Foto palestrante fulano de tal">
+              <img class="figure of-speaker at-keynote" src="images/borba.png" alt="Foto palestrante Luiz Borba">
               <figcaption class="has-hidden-font">Foto palestrante Luiz Borba</figcaption>
             </figure>
             <div class="is-info">
@@ -342,8 +399,8 @@ title: TropicalConf Pocket Edition 2017
     <article class="is-schedule">
       <header>
         <div class="is-speaker-header is-non-expandable">
-          <time datetime="2014-09-16T18:20:30">14:00 - 14:15</time>
-          <h3 class="title of-keynote">Break</h3>
+          <time datetime="2014-09-16T19:20:30">19:20 - 19:30</time>
+          <h3 class="title of-keynote">Encerramento</h3>
         </div>
       </header>
     </article>
@@ -351,7 +408,7 @@ title: TropicalConf Pocket Edition 2017
     <article class="is-schedule">
       <header>
         <div class="is-speaker-header is-non-expandable">
-          <time datetime="2014-09-16T18:20:30">14:00 - 14:15</time>
+          <time datetime="2014-09-16T19:30:30">19:30 - --:--</time>
           <h3 class="title of-keynote">After</h3>
         </div>
       </header>
@@ -404,6 +461,3 @@ title: TropicalConf Pocket Edition 2017
     </div>
   </section>
 </footer>
-
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="javascripts/parallax.js"></script>
