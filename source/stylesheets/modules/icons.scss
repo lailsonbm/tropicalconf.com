@@ -8,6 +8,7 @@
 }
 
 .icon.of-arrow { margin-top: -2px; }
+.icon.of-calendar {  width: 14px; }
 
 .icon {
   &.is-active {
@@ -26,4 +27,22 @@
     width: 26px;
     @media (min-width: 1140px) { display: none; }
   }
+  &.of-arrow-down {
+    margin: 0 0 0 17px;
+  }
+  &.at-footer {
+    margin: 10px 0 auto 0;
+  }
+  &.of-guava {
+    margin-top: 21px;
+    margin-right: 20px;
+  }
+  &.of-inloco {
+    margin-top: 17px;
+    margin-right: 20px;
+  }
+
 }
+
+.is-down { transform: rotate(0);}
+.is-up { transform: rotate(180);}
