@@ -79,4 +79,56 @@
     margin-top: 60px;
     margin-bottom: 10px;
   }
+  &.of-speaker {
+    display: block;
+    width: 77px;
+    &.at-keynote {
+      margin-bottom: 20px;
+    }
+    &.is-selected {
+      width: 160px;
+      @media (max-width: 800px) {
+        width: 120px;
+        margin: 0;
+      }
+    }
+    &.is-selected::after {
+      position: relative;
+      bottom: 226px;
+      left: -9px;
+      z-index: 999;
+      display: inline-block;
+      width: 180px;
+      height: 180px;
+      margin-bottom: -220px;
+      border: 4px #ff5512 solid;
+      border-radius: 100px;
+      content: "";
+      @media (max-width: 800px) {
+        width: 140px;
+        height: 140px;
+      }
+    }
+
+    &.is-active {
+      display: block;
+      opacity: 1;
+    }
+    &.is-active::after {
+      position: relative;
+      bottom: 148px;
+      left: -6px;
+      z-index: 999;
+      display: inline-block;
+      width: 90px;
+      height: 90px;
+      margin-bottom: -140px;
+      border: 2px $orange solid;
+      border-radius: 100px;
+      content: "";
+    }
+    &.is-unfocused {
+      opacity: .3;
+    }
+  }
 }
