@@ -43,6 +43,7 @@ p {
       width: 23em;
       font-size: 1rem;
     }
+    @media (max-width: 320px) { width: 100%; }
 }
 }
 
@@ -63,24 +64,28 @@ h2 {
   @media (max-width: 850px) { width: 14em;}
 }
 
+h3 {
+  color: $white;
+  font-family: $montserrat;
+  font-weight: $black;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+time {
+  color: #a4e4ff;
+  font-family: "Fira Mono";
+  font-weight: 400;
+}
+
 .of-description {
+  margin-bottom: 15px;
   font-size: 1.3rem;
   line-height: 1.7rem;
-  margin-bottom: 15px;
   @media (min-width: 900px) { font-size: 1rem; }
   }
 
-.is-speaker-description {
-  display: block;
-  line-height: 1;
-  text-align: left;
-  margin: 0;
-  @media (min-width: 961px) {
-    display: none;
-    text-align: center;
-    margin: 0 10px 0;
-   }
-  }
+
 
 address {
   padding: 0;
@@ -122,22 +127,29 @@ li { font-size: .9rem; }
   font-size: 2.2rem;
   line-height: 1;
   text-transform: uppercase;
-  @media (min-width: 1100px) {
-    font-size: 2.3rem;
+  @media (min-width: 1100px) { font-size: 2.3rem; }
+  @media (min-width: 1400px) { font-size: 2.7rem; }
+  @media (max-width: 320px) { width: 100%; }
+
+  &.of-section {
+    width: 15em;
+    margin: 100px auto;
+    color: $white;
+    text-align: center;
+    @media (max-width: 800px) {
+      width: 90%;
     }
-  @media (min-width: 1400px) {
-    font-size: 2.7rem;
-    }
+  }
 }
 
 .is-date {
+  margin-top: 10px;
   color: $dark-blue;
   font-family: $montserrat;
   font-weight: $black;
   font-size: 3.2rem;
   line-height: 1rem;
   letter-spacing: .4rem;
-  margin-top: 10px;
   @media (max-width: 850px) {font-size: 4rem;}
   @media (max-width: 400px) {font-size: 2.5rem;}
 }
@@ -184,24 +196,71 @@ li { font-size: .9rem; }
   text-align: center;
 }
 
-.of-speaker {
-  margin: 10px auto 0;
-  font-size: 1rem;
-  text-align: center;
+.of-company {
+  display: inline-block;
 }
 
-.is-speaker-title {
-  color: $dark-blue;
+.title {
+  color: $white;
   font-family: $montserrat;
-  font-weight: $black;
-  font-size: 1rem;
-  margin-bottom: 10px;
-  line-height: 1;
+  font-weight: $medium;
+  font-size: 1.4rem;
   text-transform: uppercase;
-  margin-top: 0;
-  @media (min-width: 961px) {
-    margin-top: 0;
-    margin-bottom: 3px;
+  &.of-keyspeaker {
+    margin: 0;
+    text-align: left;
+  }
+  &.of-keynote {
+    margin: -4px 0 20px 14px;
+    text-align: left;
+    @media (max-width: 800px) {
+      margin: 0 0 10px;
+    }
+  }
+}
+
+.description {
+  color: $white;
+  &.of-keynote {
+    display: block;
+    padding-left: 42px;
+    margin: 0 0 22px;
+    line-height: 1.4rem;
+    text-align: left;
+    @media (max-width: 800px) {
+      padding-left: 0;
+    }
+  }
+  &.of-keyspeaker {
+    display: block;
+    line-height: 1.4rem;
+    text-align: left;
+    @media (max-width: 800px) {
+      text-align: center;
+    }
+  }
+  &.of-footer {
+    margin-top: 10px;
+    line-height: 2;
+    a {
+      color: $orange;
+    }
+  }
+  &.is-hidden {
+    display: none;
+  }
+  a { color: $white;}
+  a:hover { color: $orange; }
+}
+
+.caption {
+  &.of-footer {
+    display: inline-block;
+    color: $light-blue;
+    font-size: .8rem;
+  }
+  a {
+    color: $orange;
   }
 }
 
