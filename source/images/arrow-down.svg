@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="7px" viewBox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Hero-(MD)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Hero-Day---Speakers-" transform="translate(-346.000000, -1409.000000)" fill="#FF5512">
+            <path d="M352,1416.0344 C351.774898,1416.0344 351.55952,1415.94274 351.40352,1415.78033 L346.231134,1410.40126 C345.91417,1410.07188 345.924515,1409.54781 346.254099,1409.23105 C346.583477,1408.9143 347.107336,1408.92444 347.424093,1409.25402 L352,1414.01282 L356.575907,1409.25402 C356.892457,1408.92464 357.416316,1408.9143 357.745901,1409.23105 C358.075485,1409.54781 358.08583,1410.07188 357.768866,1410.40126 L352.59648,1415.78033 C352.44048,1415.94274 352.225102,1416.0344 352,1416.0344" id="arrow-down"></path>
+        </g>
+    </g>
+</svg>
