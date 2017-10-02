@@ -31,6 +31,7 @@ GEM
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     hashie (3.5.6)
+    htmlcompressor (0.2.0)
     i18n (0.7.0)
     kramdown (1.14.0)
     listen (3.0.8)
@@ -73,6 +74,9 @@ GEM
       servolux
       tilt (~> 2.0)
       uglifier (~> 3.0)
+    middleman-minify-html (3.4.1)
+      htmlcompressor (~> 0.2.0)
+      middleman-core (>= 3.2)
     minitest (5.10.2)
     normalize-scss (7.0.0)
       sass (~> 3.3)
@@ -105,6 +109,7 @@ PLATFORMS
 DEPENDENCIES
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.8)
+  middleman-minify-html (~> 3.4.1)
   normalize-scss (~> 7.0)
   tzinfo-data
   wdm (~> 0.1)
