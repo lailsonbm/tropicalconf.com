@@ -44,7 +44,7 @@ p {
       font-size: 1rem;
     }
     @media (max-width: 320px) { width: 100%; }
-}
+  }
 }
 
 strong {
@@ -152,8 +152,8 @@ li { font-size: .9rem; }
 }
 
 .is-date {
-  margin-top: 10px;
   padding-top: 20px;
+  margin-top: 10px;
   color: $dark-blue;
   font-family: $montserrat;
   font-weight: $black;
