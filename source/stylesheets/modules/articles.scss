@@ -25,6 +25,7 @@ ul li {
 .time-slot {
   display: flex;
   flex-direction: row;
+  letter-spacing: -.2px;
   @media (max-width: 800px) {
     margin-bottom: 10px;
   }
