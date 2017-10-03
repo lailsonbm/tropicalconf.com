@@ -145,9 +145,10 @@ li { font-size: .9rem; }
     }
     &.is-marginless {
       margin-bottom: 40px;
+      margin-top: 100px;
     }
 
-    &.at-schedule { margin-top: 0; }
+    &.at-schedule { margin-top: 40px; }
 
     &.is-intern-tittle {
       margin: 50px;
