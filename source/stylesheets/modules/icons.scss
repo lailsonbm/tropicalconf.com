@@ -29,6 +29,7 @@
   }
   &.of-arrow-down {
     margin: 0 0 0 17px;
+    transition: transform 2s;
   }
   &.of-swipe {
     width: 35px;
@@ -49,5 +50,13 @@
 
 }
 
-.is-down { transform: rotate(0);}
-.is-up { transform: rotate(180);}
+.is-down {
+  transform: rotate(0deg);
+}
+.is-up {
+  transform: rotate(180deg);
+}
+
+.icon-image {
+  transition: transform 400ms ease;
+}

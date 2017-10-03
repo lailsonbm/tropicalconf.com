@@ -29,4 +29,8 @@ $(function() {
 		}
 
 	})
+
+	$('.js-toggle-direction').click(function() {
+		$(this).find('.icon-image').toggleClass('is-up');
+	})
 });
