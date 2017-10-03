@@ -4,6 +4,7 @@ $(function() {
     wrapAround: true,
     draggable: true,
     adaptiveHeight: true,
+    prevNextButtons: false,
     pageDots: false
   });
   // 2nd carousel, navigation
