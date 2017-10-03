@@ -260,7 +260,7 @@ body {
   width: 800px;
   margin: 30px auto;
   @media (max-width: 800px) {
-    width: 90%;
+    width: 100%;
   }
   &:last-child {
     margin: 0 auto;
@@ -306,7 +306,7 @@ body {
 }
 .is-speaker-picture {
   width: 60px;
-  margin: -8px 30px -8px 42px;
+  margin: -8px 30px -8px 24px;
   @media (max-width: 800px) {
     margin: -8px 30px -8px 0;
   }

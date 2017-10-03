@@ -142,6 +142,7 @@ li { font-size: .9rem; }
     text-align: center;
     @media (max-width: 800px) {
       width: 90%;
+      margin-bottom: 60px;
     }
     &.is-marginless {
       margin-bottom: 40px;
@@ -238,7 +239,7 @@ li { font-size: .9rem; }
   color: $white;
   &.of-keynote {
     display: block;
-    padding-left: 7px;
+    padding-left: 24px;
     margin: 0 0 22px;
     line-height: 1.4rem;
     text-align: left;
