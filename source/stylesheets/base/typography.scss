@@ -75,6 +75,7 @@ h3 {
 }
 
 time {
+  display: inline-block;
   color: $light-blue;
   font-family: "Fira Mono";
   font-weight: 400;
@@ -236,7 +237,7 @@ li { font-size: .9rem; }
   color: $white;
   &.of-keynote {
     display: block;
-    padding-left: 42px;
+    padding-left: 7px;
     margin: 0 0 22px;
     line-height: 1.4rem;
     text-align: left;
