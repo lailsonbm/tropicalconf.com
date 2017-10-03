@@ -116,32 +116,32 @@ title: TropicalConf Pocket Edition 2017
     </figure>
     <h4 class="caption of-footer is-centered">Arraste o dedo para ver os palestrantes</h4>
 
-    <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }' >
-      <div class="carousel-cell">
+    <div class="carousel carousel-nav" role="list" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }' >
+      <div class="carousel-cell" role="listitem">
         <figure class="figure of-speaker">
           <img class="figure of-speaker" src="images/juvenal.png" alt="Flávio Juvenal">
           <figcaption class="has-hidden-font">Foto de Flávio Juvenal</figcaption>
         </figure>
       </div>
-      <div class="carousel-cell">
+      <div class="carousel-cell" role="listitem">
         <figure class="figure of-speaker">
           <img class="figure of-speaker" src="images/luis.png" alt="Luis Felipe Souza">
-          <figcaption class="has-hidden-font">Luis Felipe Souza</figcaption>
+          <figcaption class="has-hidden-font">Foto de Luis Felipe Souza</figcaption>
         </figure>
       </div>
-      <div class="carousel-cell">
+      <div class="carousel-cell" role="listitem">
         <figure class="figure of-speaker">
           <img class="figure of-speaker" src="images/borba.png" alt="Guilherme Carvalho">
           <figcaption class="has-hidden-font">Foto de Guilherme Carvalho</figcaption>
         </figure>
       </div>
-      <div class="carousel-cell">
+      <div class="carousel-cell" role="listitem">
         <figure class="figure of-speaker">
           <img class="figure of-speaker" src="images/falconi.png" alt="Gabriel Falconi">
           <figcaption class="has-hidden-font">Foto de Gabriel Falconi</figcaption>
         </figure>
       </div>
-      <div class="carousel-cell">
+      <div class="carousel-cell" role="listitem">
         <figure class="figure of-speaker">
           <img class="figure of-speaker" src="images/guilherme.png" alt="Guilherme Carvalho">
           <figcaption class="has-hidden-font">Foto de Guilherme Carvalho</figcaption>
@@ -149,8 +149,8 @@ title: TropicalConf Pocket Edition 2017
       </div>
     </div>
 
-    <article class="carousel carousel-main" data-flickity>
-      <div class="grid of-keyspeaker is-flex carousel-cell">
+    <section class="carousel carousel-main" data-flickity>
+      <article class="grid of-keyspeaker is-flex carousel-cell">
         <div class="section-a">
           <figure>
             <img class="figure of-speaker is-selected" src="images/juvenal.png" alt="Luiz Borba">
@@ -165,9 +165,9 @@ title: TropicalConf Pocket Edition 2017
           </ul>
           <p class="description of-keyspeaker">Sócio da <a href="https://www.vinta.com.br/">Vinta Software</a>, consultoria web especializada em construir produtos com Python/Django e React. Apaixonado por alta-qualidade da user experience ao código. Por isso, defenderá produtos contra deadlines absurdos e funcionalidades irracionais.</p>
         </div>
-      </div>
+      </article>
 
-      <div class="grid of-keyspeaker is-flex carousel-cell">
+      <article class="grid of-keyspeaker is-flex carousel-cell">
         <div class="section-a">
           <figure>
             <img class="figure of-speaker is-selected" src="images/luis.png" alt="Luis Felipe Souza">
@@ -182,9 +182,9 @@ title: TropicalConf Pocket Edition 2017
           </ul>
           <p class="description of-keyspeaker">Desenvolvedor Front-end desde 2010, hoje trabalha na Magnetis. Gosta de tudo que envolve os produtos digitais, desde UX até o código. É fã de comunidades!</p>
         </div>
-      </div>
+      </article>
 
-      <div class="grid of-keyspeaker is-flex carousel-cell">
+      <article class="grid of-keyspeaker is-flex carousel-cell">
         <div class="section-a">
           <figure>
             <img class="figure of-speaker is-selected" src="images/borba.png" alt="Luiz Borba">
@@ -199,9 +199,9 @@ title: TropicalConf Pocket Edition 2017
           </ul>
           <p class="description of-keyspeaker"> Graduado em Ciência da Computação pela UFPE. Já desenvolveu soluções de grande porte para várias empresas “fortune 500”, enquanto trabalhava no CESAR. Também é especialista em metodologias ágeis e apoiou startups e outras empresas no uso de ferramentas de desenvolvimento de negócios. Atualmente trabalha com arquitetura de micro-serviços e programação funcional no NUBANK.</p>
         </div>
-      </div>
+      </article>
 
-      <div class="grid of-keyspeaker is-flex carousel-cell">
+      <article class="grid of-keyspeaker is-flex carousel-cell">
         <div class="section-a">
           <figure>
             <img class="figure of-speaker is-selected" src="images/falconi.png" alt="Luiz Borba">
@@ -216,9 +216,9 @@ title: TropicalConf Pocket Edition 2017
           </ul>
           <p class="description of-keyspeaker">Gabriel Falcone, Co-Fundador, [VP de Engenharia Mobile] e Líder do desenvolvimento dos SDKs da In Loco. Diverte-se explorando as minúcias do Android, tem bastante interessa na visão de futuro da computação ubiqua e contribui desde 2011 na In Loco com objetivo de chegar mais perto desse futuro.</p>
         </div>
-      </div>
+      </article>
 
-      <div class="grid of-keyspeaker is-flex carousel-cell">
+      <article class="grid of-keyspeaker is-flex carousel-cell">
         <div class="section-a">
           <figure>
             <img class="figure of-speaker is-selected" src="images/guilherme.png" alt="Luiz Borba">
@@ -233,8 +233,8 @@ title: TropicalConf Pocket Edition 2017
           </ul>
           <p class="description of-keyspeaker">Guilherme Carvalho é fundador e desenvolvedor na Guava Software. Estudou Ciência da Computação no CIn da UFPE e fez mestrado na área de Inteligência Artificial.</p>
         </div>
-      </div>
-    </article>
+      </article>
+    </section>
   </section>
 
   <section class="schedule-wrapper">
@@ -243,7 +243,7 @@ title: TropicalConf Pocket Edition 2017
     <article class="is-schedule">
       <header>
         <div class="is-speaker-header is-non-expandable">
-          <time datetime="2014-09-16T14:00:00">14:00 - 14:15</time>
+          <time datetime="2014-09-16T14:00:00">14:00</time>-<time datetime="2017-10-26T14:16">14:16</time>
           <h3 class="title of-keynote">Abertura</h3>
         </div>
       </header>
@@ -252,7 +252,7 @@ title: TropicalConf Pocket Edition 2017
     <article class="is-schedule">
       <header class="is-speaker-header js-toggle-direction">
         <div class="time-slot">
-          <time datetime="2017-10-26T14:20:00">14:20 - 15:00</time>
+          <time datetime="2017-10-26T14:20:00">14:20</time> - <time datetime="2017-10-26T15:00">15:00</time>
           <figure class="icon of-arrow-down">
             <img src="images/arrow-down.svg" alt="arrow down" class="icon-image">
             <figcaption class="has-hidden-font">icon of a chevron arrow</figcaption>
@@ -278,7 +278,7 @@ title: TropicalConf Pocket Edition 2017
     <article class="is-schedule">
       <header class="is-speaker-header js-toggle-direction">
         <div class="time-slot">
-          <time datetime="2017-10-26T14:00:00">15:00 - 15:40</time>
+          <time datetime="2017-10-26T14:00:00">15:00</time> - <time datetime="2017-10-26T15:40">15:40</time>
           <figure class="icon of-arrow-down">
             <img src="images/arrow-down.svg" alt="arrow down" class="icon-image">
             <figcaption class="has-hidden-font">icon of a chevron arrow</figcaption>
@@ -286,25 +286,25 @@ title: TropicalConf Pocket Edition 2017
         </div>
           <h3 class="title of-keynote">Transformando o seu site em um PWA</h3>
       </header>
-        <div class="is-speaker-content">
-          <p class="description of-keynote is-hidden">Combinando o melhor da experiência web e o melhor dos aplicativos, pra entregar uma ótima experiência aos usuários.</p>
-          <div class="is-bio">
-            <figure class="is-speaker-picture">
-              <img class="figure of-speaker at-keynote" src="images/luis.png" alt="Foto palestrante fulano de tal">
-              <figcaption class="has-hidden-font">Foto palestrante Flavio Juvenal</figcaption>
-            </figure>
-            <div class="is-info">
-              <span>Luís Felipe Souza</span>
-              <small class="of-company">Magnetis</small>
-            </div>
+      <div class="is-speaker-content">
+        <p class="description of-keynote is-hidden">Combinando o melhor da experiência web e o melhor dos aplicativos, pra entregar uma ótima experiência aos usuários.</p>
+        <div class="is-bio">
+          <figure class="is-speaker-picture">
+            <img class="figure of-speaker at-keynote" src="images/luis.png" alt="Foto palestrante fulano de tal">
+            <figcaption class="has-hidden-font">Foto palestrante Flavio Juvenal</figcaption>
+          </figure>
+          <div class="is-info">
+            <span>Luís Felipe Souza</span>
+            <small class="of-company">Magnetis</small>
           </div>
         </div>
+      </div>
     </article>
 
     <article class="is-schedule">
       <header>
         <div class="is-speaker-header is-non-expandable">
-          <time datetime="2014-09-16T15:40:00">15:40 - 16:20</time>
+          <time datetime="2014-09-16T15:40:00">15:40</time> - <time datetime="2017-10-26T16:20">16:20</time>
           <h3 class="title of-keynote">Palestrante Não Confirmado</h3>
         </div>
       </header>
@@ -313,7 +313,7 @@ title: TropicalConf Pocket Edition 2017
     <article class="is-schedule">
       <header>
         <div class="is-speaker-header is-non-expandable">
-          <time datetime="2014-09-16T16:20:00">16:20 - 17:20</time>
+          <time datetime="2014-09-16T16:20:00">16:20</time> - <time datetime="2017-10-26T17:20">17:20</time>
           <h3 class="title of-keynote">Break</h3>
         </div>
       </header>
@@ -322,9 +322,9 @@ title: TropicalConf Pocket Edition 2017
     <article class="is-schedule">
       <header class="is-speaker-header js-toggle-direction">
         <div class="time-slot">
-          <time datetime="2017-10-26T17:20:00">17:20 - 18:00</time>
+          <time datetime="2017-10-26T17:20">17:20</time> - <time datetime="2017-10-26T18:00">18:00</time>
           <figure class="icon of-arrow-down">
-            <img src="images/arrow-down.svg" alt="arrow down" class="icon-image">
+            <img src="images/arrow-down.svg" alt="Arrow down" class="icon-image">
             <figcaption class="has-hidden-font">icon of a chevron arrow</figcaption>
           </figure>
         </div>
@@ -348,7 +348,7 @@ title: TropicalConf Pocket Edition 2017
     <article class="is-schedule">
       <header class="is-speaker-header js-toggle-direction">
         <div class="time-slot">
-          <time datetime="2017-10-26T14:00:00">18:00 - 18:40</time>
+          <time datetime="2017-10-26T14:00:00">18:00</time> - <time datetime="2017-10-26T18:40">18:40</time>
           <figure class="icon of-arrow-down">
             <img src="images/arrow-down.svg" alt="arrow down" class="icon-image">
             <figcaption class="has-hidden-font">icon of a chevron arrow</figcaption>
@@ -374,7 +374,7 @@ title: TropicalConf Pocket Edition 2017
     <article class="is-schedule">
       <header class="is-speaker-header js-toggle-direction">
         <div class="time-slot">
-          <time datetime="2017-10-26T18:40:00">18:40 - 19:20</time>
+          <time datetime="2017-10-26T18:40:00">18:40</time> - <time datetime="2017-10-26T19:20">19:20</time>
           <figure class="icon of-arrow-down">
             <img src="images/arrow-down.svg" alt="arrow down" class="icon-image">
             <figcaption class="has-hidden-font">icon of a chevron arrow</figcaption>
@@ -400,7 +400,7 @@ title: TropicalConf Pocket Edition 2017
     <article class="is-schedule">
       <header>
         <div class="is-speaker-header is-non-expandable">
-          <time datetime="2014-09-16T19:20:30">19:20 - 19:30</time>
+          <time datetime="2014-09-16T19:20:30">19:20</time> - <time datetime="2017-10-26T19:30">19:30</time>
           <h3 class="title of-keynote">Encerramento</h3>
         </div>
       </header>
@@ -426,7 +426,7 @@ title: TropicalConf Pocket Edition 2017
     </div>
     <div>
       <div>
-        <small class="caption of-footer">Design & frontend by <a href="http://guavasoftware.com.br">Guava Software</a></small>
+        <small class="caption of-footer">Design &amp; frontend by <a href="http://guavasoftware.com.br">Guava Software</a></small>
       </div>
       <div>
         <p class="description of-footer">Código de Conduta - Edições Anteriores: <a href="http://tropicalrb.com/">2015</a>  | <a href="http://tropicalrb.com/2014/en/">2014</a> | <a href="http://tropicalrb.com/2013/">2013</a> | <a href="http://tropicalrb.com/2012/">2012</a></p>
