@@ -10,7 +10,6 @@ body {
   overflow-x: hidden;
   background: url("/images/background.png");
   background-color: $white;
-  // background-repeat: no-repeat;
 }
 
 
@@ -21,7 +20,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: auto;
-    // min-height: 100vh;
   }
   &.is-container {
     position: relative;
