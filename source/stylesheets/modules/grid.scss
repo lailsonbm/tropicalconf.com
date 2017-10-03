@@ -215,7 +215,6 @@ body {
     @media (max-width: 850px) { flex-direction: column; }
   }
   &.is-left-aligned {
-    width: 400px;
     margin-right: 20px;
     @media (max-width: 1140px) { width: 20em; }
     @media (max-width: 780px) { width: 18em; }
@@ -255,6 +254,13 @@ body {
 }
 
 // Section Testes
+
+.is-blue {
+  margin: 0;
+  overflow-x: hidden;
+  background: url("/images/background.png");
+  background-color: $dark-blue;
+}
 
 .is-schedule {
   width: 800px;
@@ -337,4 +343,8 @@ body {
   @media (max-width: 1000px) {
     margin-top: 20px;
   }
+}
+.is-support {
+  margin: auto 40px;
+  @media (max-width: 1000px) { margin: auto 10px; }
 }
