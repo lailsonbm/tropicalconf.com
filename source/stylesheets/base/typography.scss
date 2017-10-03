@@ -141,6 +141,9 @@ li { font-size: .9rem; }
     @media (max-width: 800px) {
       width: 90%;
     }
+    &.is-marginless {
+      margin-bottom: 40px;
+    }
 
     &.at-schedule { margin-top: 0; }
 
@@ -269,6 +272,15 @@ li { font-size: .9rem; }
     color: $light-blue;
     font-size: .8rem;
   }
+  &.is-centered {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    @media (min-width: 800px) {
+      display: none;
+    }
+  }
+
   a {
     color: $orange;
   }

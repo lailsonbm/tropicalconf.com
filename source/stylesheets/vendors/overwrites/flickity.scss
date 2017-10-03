@@ -9,10 +9,9 @@
 }
 
 .carousel-cell {
-  height: 272px;
+  // height: 272px;
   opacity: .3;
   @media (max-width: 800px) {
-    height: 400px;
     opacity: 0;
   }
   .carousel-main & { width: 100%; }
@@ -46,6 +45,10 @@
   }
 }
 
+.flickity-viewport {
+  transition: height 0.2s;
+}
+
 
 /* ---- previous/next buttons ---- */
 
@@ -62,6 +65,7 @@
   /* vertically center */
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  @media (max-width: 800px) { display: none; }
 }
 
 .flickity-prev-next-button:hover { background: white; }
