@@ -2,16 +2,15 @@
 // Colors                                  (Base styles) //
 ///////////////////////////////////////////////////////////
 $white:                #fff;
-$black:                #000;
 $orange:               #ff5512;
 $dark-blue:            #293982;
+$light-blue:           #a4e4ff;
 $shadow-grey:          #e7e7e7;
 $valid-green:          #53be1c;
 
 // Semantic variations
 $link-color:           $dark-blue;
 $link-hover-color:     $orange;
-$text-color:           $black;
 
 ::selection {
   background: lighten($orange, 40%);

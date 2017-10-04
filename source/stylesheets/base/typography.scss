@@ -21,7 +21,6 @@ $size-base: 16px; // 1rem
 // Scaffolds typographic styles.
 html, body {
   padding: 0;
-  color: $text-color;
   font-family: $fira-mono;
   font-weight: $regular;
   font-size:   $size-base;
@@ -43,7 +42,8 @@ p {
       width: 23em;
       font-size: 1rem;
     }
-}
+    @media (max-width: 320px) { width: 100%; }
+  }
 }
 
 strong {
@@ -59,18 +59,40 @@ strong {
 
 h2 {
   width: 40em;
-  padding-right: 50px;
+  padding-right: 20px;
   margin: 0;
   color: $dark-blue;
   font-size: 1.5rem;
-  @media (max-width: 850px) { width: 14em;}
+  @media (max-width: 850px) {
+    width: 14em;
+    padding-right: 0;
+  }
+}
+
+h3 {
+  color: $white;
+  font-family: $montserrat;
+  font-weight: $black;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+time {
+  display: inline-block;
+  color: $light-blue;
+  font-family: "Fira Mono";
+  font-weight: 400;
+  letter-spacing: -1.2px;
 }
 
 .of-description {
+  margin-bottom: 15px;
   font-size: 1.3rem;
   line-height: 1.7rem;
   @media (min-width: 900px) { font-size: 1rem; }
-}
+  }
+
+
 
 address {
   padding: 0;
@@ -105,25 +127,42 @@ li { font-size: .9rem; }
 .is-title {
   width: 9em;
   margin-right: 10px;
+  margin-bottom: 10px;
   color: $dark-blue;
   font-family: $montserrat;
   font-weight: $black;
   font-size: 2.2rem;
   line-height: 1;
   text-transform: uppercase;
-  @media (min-width: 1100px) {
-    font-size: 2.3rem;
+  @media (min-width: 1100px) { font-size: 2.3rem; }
+  @media (min-width: 1400px) { font-size: 2.7rem; }
+  @media (max-width: 320px) { width: 100%; }
+
+  &.of-section {
+    width: 15em;
+    margin: 100px auto;
+    color: $white;
+    text-align: center;
+    @media (max-width: 800px) {
+      width: 90%;
+      margin-bottom: 60px;
     }
-  @media (min-width: 1400px) {
-    font-size: 2.7rem;
+    &.is-marginless {
+      margin-bottom: 40px;
+      margin-top: 100px;
     }
-  &.is-intern-tittle {
-    margin: 50px;
+
+    &.at-schedule { margin-top: 40px; }
+
+    &.is-intern-tittle {
+      margin: 50px;
+    }
   }
 }
 
 .is-date {
   padding-top: 20px;
+  margin-top: 10px;
   color: $dark-blue;
   font-family: $montserrat;
   font-weight: $black;
@@ -174,6 +213,84 @@ li { font-size: .9rem; }
   font-size: 1rem;
   line-height: 1.4rem;
   text-align: center;
+}
+
+.of-company {
+  display: inline-block;
+}
+
+.title {
+  color: $white;
+  font-family: $montserrat;
+  font-weight: $medium;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  &.of-keyspeaker {
+    margin: 0;
+    text-align: left;
+  }
+  &.of-keynote {
+    margin: -4px 0 20px 14px;
+    text-align: left;
+    @media (max-width: 800px) {
+      margin: 0 0 10px;
+    }
+  }
+}
+
+.description {
+  color: $white;
+  &.of-keynote {
+    display: block;
+    padding-left: 24px;
+    margin: 0 0 22px;
+    line-height: 1.4rem;
+    text-align: left;
+    @media (max-width: 800px) {
+      padding-left: 0;
+    }
+  }
+  &.of-keyspeaker {
+    display: block;
+    line-height: 1.4rem;
+    text-align: left;
+    @media (max-width: 800px) {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+  &.of-footer {
+    margin-top: 10px;
+    line-height: 2;
+    a {
+      color: $orange;
+    }
+  }
+  &.is-hidden {
+    display: none;
+  }
+  a { color: $white;}
+  a:hover { color: $orange; }
+}
+
+.caption {
+  &.of-footer {
+    display: inline-block;
+    color: $light-blue;
+    font-size: .8rem;
+  }
+  &.is-centered {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    @media (min-width: 800px) {
+      display: none;
+    }
+  }
+
+  a {
+    color: $orange;
+  }
 }
 
 .is-code-of-conduct {

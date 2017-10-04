@@ -76,7 +76,7 @@ title: TropicalConf Pocket Edition 2017
       </div>
 
       <div class="grid of-info is-flex is-box">
-          <h2 class="is-left-aligned">
+          <h2 class="grid is-left-aligned">
             O Tropical Ruby mudou e agora é Tropical Conf.
             <hr>
           </h2>
@@ -104,21 +104,361 @@ title: TropicalConf Pocket Edition 2017
       </article>
     </section>
   </article>
-
-  <footer class="footer is-position">
-    <p>
-      Design, copy &amp; frontend by <a href="https://guavasoftware.com/"> Guava Software </a>
-    </p>
-    <br>
-    <p>
-      <a href="#">
-        <strong>Código de Conduta</strong></a>
-        - Edições Anteriores
-        <strong><a target="_blank" href="http://tropicalrb.com/">2015</a></strong>
-        <strong><a target="_blank" href="http://tropicalrb.com/2014/en/">2014</a></strong>
-        <strong><a target="_blank" href="http://tropicalrb.com/2013/">2013</a></strong>
-        <strong><a target="_blank" href="http://tropicalrb.com/2012/">2012</a></strong>
-        </p>
-  </footer>
-
+<!-- Testes de GSS e integração com o layout de filipe a partir daqui! -->
 </main>
+<div class="grid of-schedule">
+  <section>
+
+    <h3 class="is-title of-section is-marginless">Palestrantes</h3>
+    <figure class="icon of-swipe">
+      <img src="images/swipe.svg" alt="ícone do swipe">
+      <figcaption class="has-hidden-font">ícone do swipe</figcaption>
+    </figure>
+    <h4 class="caption of-footer is-centered">Arraste o dedo para ver os palestrantes</h4>
+
+    <div class="carousel carousel-nav" role="list" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }' >
+      <div class="carousel-cell" role="listitem">
+        <figure class="figure of-speaker">
+          <img class="figure of-speaker" src="images/juvenal.png" alt="Flávio Juvenal">
+          <figcaption class="has-hidden-font">Foto de Flávio Juvenal</figcaption>
+        </figure>
+      </div>
+      <div class="carousel-cell" role="listitem">
+        <figure class="figure of-speaker">
+          <img class="figure of-speaker" src="images/luis.png" alt="Luis Felipe Souza">
+          <figcaption class="has-hidden-font">Foto de Luis Felipe Souza</figcaption>
+        </figure>
+      </div>
+      <div class="carousel-cell" role="listitem">
+        <figure class="figure of-speaker">
+          <img class="figure of-speaker" src="images/borba.png" alt="Guilherme Carvalho">
+          <figcaption class="has-hidden-font">Foto de Guilherme Carvalho</figcaption>
+        </figure>
+      </div>
+      <div class="carousel-cell" role="listitem">
+        <figure class="figure of-speaker">
+          <img class="figure of-speaker" src="images/falconi.png" alt="Gabriel Falconi">
+          <figcaption class="has-hidden-font">Foto de Gabriel Falconi</figcaption>
+        </figure>
+      </div>
+      <div class="carousel-cell" role="listitem">
+        <figure class="figure of-speaker">
+          <img class="figure of-speaker" src="images/guilherme.png" alt="Guilherme Carvalho">
+          <figcaption class="has-hidden-font">Foto de Guilherme Carvalho</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <section class="carousel carousel-main" data-flickity>
+      <article class="grid of-keyspeaker is-flex carousel-cell">
+        <div class="section-a">
+          <figure>
+            <img class="figure of-speaker is-selected" src="images/juvenal.png" alt="Luiz Borba">
+            <figcaption class="has-hidden-font">Foto de Luiz Borba</figcaption>
+          </figure>
+        </div>
+        <div class="section-b">
+          <h3 class="title of-keyspeaker">Flávio Juvenal</h3>
+          <ul class="social-links">
+            <li><a href="https://twitter.com/flaviojuvenal">/Twitter</a></li>
+            <li><a href="https://github.com/fjsj">/Github</a></li>
+</ul>
+          <p class="description of-keyspeaker">Sócio da <a href="https://www.vinta.com.br/">Vinta Software</a>, consultoria web especializada em construir produtos com Python/Django e React. Apaixonado por alta-qualidade da user experience ao código. Por isso, defenderá produtos contra deadlines absurdos e funcionalidades irracionais.</p>
+        </div>
+      </article>
+
+      <article class="grid of-keyspeaker is-flex carousel-cell">
+        <div class="section-a">
+          <figure>
+            <img class="figure of-speaker is-selected" src="images/luis.png" alt="Luis Felipe Souza">
+            <figcaption class="has-hidden-font">Foto de Luis Felipe Souza</figcaption>
+          </figure>
+        </div>
+        <div class="section-b">
+          <h3 class="title of-keyspeaker">Luis Felipe Souza</h3>
+          <ul class="social-links">
+            <li><a href="https://twitter.com/luisfmsouz">/Twitter</a></li>
+            <li><a href="https://github.com/luisfmsouza">/Github</a></li>
+          </ul>
+          <p class="description of-keyspeaker">Desenvolvedor Front-end desde 2010, hoje trabalha na Magnetis. Gosta de tudo que envolve os produtos digitais, desde UX até o código. É fã de comunidades!</p>
+        </div>
+      </article>
+
+      <article class="grid of-keyspeaker is-flex carousel-cell">
+        <div class="section-a">
+          <figure>
+            <img class="figure of-speaker is-selected" src="images/borba.png" alt="Luiz Borba">
+            <figcaption class="has-hidden-font">Foto de Luiz Borba</figcaption>
+          </figure>
+        </div>
+        <div class="section-b">
+          <h3 class="title of-keyspeaker">Luiz Borba</h3>
+          <ul class="social-links">
+            <li><a href="https://twitter.com/luizborba">/Twitter</a></li>
+            <li><a href="https://github.com/borba">/Github</a></li>
+          </ul>
+          <p class="description of-keyspeaker"> Graduado em Ciência da Computação pela UFPE. Já desenvolveu soluções de grande porte para várias empresas “fortune 500”, enquanto trabalhava no CESAR. Também é especialista em metodologias ágeis e apoiou startups e outras empresas no uso de ferramentas de desenvolvimento de negócios. Atualmente trabalha com arquitetura de micro-serviços e programação funcional no NUBANK.</p>
+        </div>
+      </article>
+
+      <article class="grid of-keyspeaker is-flex carousel-cell">
+        <div class="section-a">
+          <figure>
+            <img class="figure of-speaker is-selected" src="images/falconi.png" alt="Luiz Borba">
+            <figcaption class="has-hidden-font">Foto de Luiz Borba</figcaption>
+          </figure>
+        </div>
+        <div class="section-b">
+          <h3 class="title of-keyspeaker">Gabriel Falcone</h3>
+          <ul class="social-links">
+            <li><a href="https://twitter.com/gabrielfalcone">/Twitter</a></li>
+            <li><a href="https://github.com/gabrielfalcone">/Github</a></li>
+          </ul>
+          <p class="description of-keyspeaker">Gabriel Falcone, Co-Fundador, [VP de Engenharia Mobile] e Líder do desenvolvimento dos SDKs da In Loco. Diverte-se explorando as minúcias do Android, tem bastante interessa na visão de futuro da computação ubiqua e contribui desde 2011 na In Loco com objetivo de chegar mais perto desse futuro.</p>
+        </div>
+      </article>
+
+      <article class="grid of-keyspeaker is-flex carousel-cell">
+        <div class="section-a">
+          <figure>
+            <img class="figure of-speaker is-selected" src="images/guilherme.png" alt="Luiz Borba">
+            <figcaption class="has-hidden-font">Foto de Guilherme Carvalho</figcaption>
+          </figure>
+        </div>
+        <div class="section-b">
+          <h3 class="title of-keyspeaker">Guilherme Carvalho</h3>
+          <ul class="social-links">
+            <li><a href="https://twitter.com/guieevc">/Twitter </a></li>
+            <li><a href="https://github.com/gvc">/Github </a></li>
+          </ul>
+          <p class="description of-keyspeaker">Guilherme Carvalho é fundador e desenvolvedor na Guava Software. Estudou Ciência da Computação no CIn da UFPE e fez mestrado na área de Inteligência Artificial.</p>
+        </div>
+      </article>
+    </section>
+  </section>
+
+  <section class="schedule-wrapper">
+    <h3 class="is-title of-section at-schedule">Grade do Evento</h3>
+
+    <article class="is-schedule">
+      <header>
+        <div class="is-speaker-header is-non-expandable">
+          <time datetime="2014-09-16T14:00:00">14:00 - 14:16</time>
+          <h3 class="title of-keynote">Abertura</h3>
+        </div>
+      </header>
+    </article>
+
+    <article class="is-schedule">
+      <header class="is-speaker-header js-toggle-direction">
+        <div class="time-slot">
+          <time datetime="2017-10-26T14:20:00">14:20 - 15:00</time>
+          <figure class="icon of-arrow-down">
+            <img src="images/arrow-down.svg" alt="arrow down" class="icon-image">
+            <figcaption class="has-hidden-font">icon of a chevron arrow</figcaption>
+          </figure>
+        </div>
+          <h3 class="title of-keynote">Como fazer uma boa biblioteca de API</h3>
+      </header>
+        <div class="is-speaker-content">
+          <p class="description of-keynote is-hidden">Não é fácil fazer boas APIs, sendo API aqui no sentido clássico de Application Programming Interface. Nem sempre é claro como podemos seguir ideais abstratos como elegância no desenvolvimento de APIs. É importante notar que uma API também é uma interface de usuário, pois conecta um(a) desenvolvedor(a) a uma solução reusável. Por isso, nesta palestra vamos avaliar APIs reais com heurísticas de usabilidade, o que deixa bem claro como diferenciar as qualidades de boas APIs.</p>
+          <div class="is-bio">
+            <figure class="is-speaker-picture">
+              <img class="figure of-speaker at-keynote" src="images/juvenal.png" alt="Foto palestrante fulano de tal">
+              <figcaption class="has-hidden-font">Foto palestrante Flavio Juvenal</figcaption>
+            </figure>
+            <div class="is-info">
+              <span>Flavio Juvenal</span>
+              <small class="of-company">Vinta Software</small>
+            </div>
+          </div>
+        </div>
+    </article>
+
+    <article class="is-schedule">
+      <header class="is-speaker-header js-toggle-direction">
+        <div class="time-slot">
+          <time datetime="2017-10-26T14:00:00">15:00 - 15:40</time>
+          <figure class="icon of-arrow-down">
+            <img src="images/arrow-down.svg" alt="arrow down" class="icon-image">
+            <figcaption class="has-hidden-font">icon of a chevron arrow</figcaption>
+          </figure>
+        </div>
+          <h3 class="title of-keynote">Transformando o seu site em um PWA</h3>
+      </header>
+      <div class="is-speaker-content">
+        <p class="description of-keynote is-hidden">Combinando o melhor da experiência web e o melhor dos aplicativos, pra entregar uma ótima experiência aos usuários.</p>
+        <div class="is-bio">
+          <figure class="is-speaker-picture">
+            <img class="figure of-speaker at-keynote" src="images/luis.png" alt="Foto palestrante fulano de tal">
+            <figcaption class="has-hidden-font">Foto palestrante Flavio Juvenal</figcaption>
+          </figure>
+          <div class="is-info">
+            <span>Luís Felipe Souza</span>
+            <small class="of-company">Magnetis</small>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="is-schedule">
+      <header>
+        <div class="is-speaker-header is-non-expandable">
+          <time datetime="2014-09-16T15:40:00">15:40 - 16:20</time>
+          <h3 class="title of-keynote">Palestrante de Schrödinger</h3>
+        </div>
+      </header>
+    </article>
+
+    <article class="is-schedule">
+      <header>
+        <div class="is-speaker-header is-non-expandable">
+          <time datetime="2014-09-16T16:20:00">16:20 - 17:20</time>
+          <h3 class="title of-keynote">Break</h3>
+        </div>
+      </header>
+    </article>
+
+    <article class="is-schedule">
+      <header class="is-speaker-header js-toggle-direction">
+        <div class="time-slot">
+          <time datetime="2017-10-26T17:20">17:20 - 18:00</time>
+          <figure class="icon of-arrow-down">
+            <img src="images/arrow-down.svg" alt="Arrow down" class="icon-image">
+            <figcaption class="has-hidden-font">icon of a chevron arrow</figcaption>
+          </figure>
+        </div>
+          <h3 class="title of-keynote">Dissecando a arquitetura de um SDK modular</h3>
+      </header>
+        <div class="is-speaker-content">
+          <p class="description of-keynote is-hidden">Já pensou como é desenvolver para programadores atuando em milhões de usuários? Nessa conversa vamos descrever a arquitetura de um dos SDK da In Loco, apresentando os componentes que permitem um rápido desenvolvimento, bem como um sistema a prova de crashes e que é capaz de detectar cenários prejudiciais para os usuários e se corrigir automaticamente.</p>
+          <div class="is-bio">
+            <figure class="is-speaker-picture">
+              <img class="figure of-speaker at-keynote" src="images/falconi.png" alt="Foto palestrante fulano de Guilherme Falcone">
+              <figcaption class="has-hidden-font">Foto palestrante Guilherme Falcone</figcaption>
+            </figure>
+            <div class="is-info">
+              <span>Gabriel Falcone</span>
+              <small class="of-company">In Loco</small>
+            </div>
+          </div>
+        </div>
+    </article>
+
+    <article class="is-schedule">
+      <header class="is-speaker-header js-toggle-direction">
+        <div class="time-slot">
+          <time datetime="2017-10-26T14:00:00">18:00 - 18:40</time>
+          <figure class="icon of-arrow-down">
+            <img src="images/arrow-down.svg" alt="arrow down" class="icon-image">
+            <figcaption class="has-hidden-font">icon of a chevron arrow</figcaption>
+          </figure>
+        </div>
+          <h3 class="title of-keynote">Encontrando seu sutiã ideal usando IA e Big Data</h3>
+      </header>
+        <div class="is-speaker-content">
+          <p class="description of-keynote is-hidden">Nesta palestra irei falar como usamos dados de compra de lingeries para melhorar um algoritmo de sugestão de sutiãs de forma científica. Explicarei como podemos usar ferramentas e metodologias para aplicar inteligência artificial em qualquer projeto.</p>
+          <div class="is-bio">
+            <figure class="is-speaker-picture">
+              <img class="figure of-speaker at-keynote" src="images/guilherme.png" alt="Foto palestrante fulano de tal">
+              <figcaption class="has-hidden-font">Foto palestrante Guilherme Carvalho</figcaption>
+            </figure>
+            <div class="is-info">
+              <span>Guilherme Carvalho</span>
+              <small class="of-company">Guava</small>
+            </div>
+          </div>
+        </div>
+    </article>
+
+    <article class="is-schedule">
+      <header class="is-speaker-header js-toggle-direction">
+        <div class="time-slot">
+          <time datetime="2017-10-26T18:40:00">18:40 - 19:20</time>
+          <figure class="icon of-arrow-down">
+            <img src="images/arrow-down.svg" alt="arrow down" class="icon-image">
+            <figcaption class="has-hidden-font">icon of a chevron arrow</figcaption>
+          </figure>
+        </div>
+          <h3 class="title of-keynote">O mundo real é imutável</h3>
+      </header>
+        <div class="is-speaker-content">
+          <p class="description of-keynote is-hidden">Nós programadores sempre criamos metáforas baseadas no mundo real (físico) para modelar nossas soluções. Essas analogias com o mundo real são importantes para criação de modelos fáceis de serem compreendidos e desenvolvidos. Entretanto, da mesma forma que Khan (Jornada nas Estrelas 2 - A Ira de Khan), apresentava um padrão de raciocínio 2D, esquecendo a terceira dimensão, a maioria de nós também segue esse padrão. Vemos o mundo real como um mundo mutável porque esquecemos de incluir uma dimensão no nosso raciocínio... o tempo... Esta visão incompleta nos leva a modelos mais complexos. Pretendo mostrar nesta apresentação que entendendo o mundo como um mundo imutável, podemos criar modelos mais simples, completos e eficazes.</p>
+          <div class="is-bio">
+            <figure class="is-speaker-picture">
+              <img class="figure of-speaker at-keynote" src="images/borba.png" alt="Foto palestrante Luiz Borba">
+              <figcaption class="has-hidden-font">Foto palestrante Luiz Borba</figcaption>
+            </figure>
+            <div class="is-info">
+              <span>Luiz Borba</span>
+              <small class="of-company">Nubank</small>
+            </div>
+          </div>
+        </div>
+    </article>
+
+    <article class="is-schedule">
+      <header>
+        <div class="is-speaker-header is-non-expandable">
+          <time datetime="2014-09-16T19:20:30">19:20 - 19:30</time>
+          <h3 class="title of-keynote">Encerramento</h3>
+        </div>
+      </header>
+    </article>
+
+    <article class="is-schedule">
+      <header>
+        <div class="is-speaker-header is-non-expandable">
+          <time datetime="2014-09-16T19:30:30">19:30 - AFTER</time>
+          <h3 class="title of-keynote">After</h3>
+        </div>
+      </header>
+    </article>
+  </section>
+
+<footer>
+  <section class="grid of-footer is-flex and is-container">
+    <div>
+      <figure class="at-footer">
+        <img src="images/tropical-neg.svg" alt="Marca do Evento">
+        <figcaption class="has-hidden-font">Logo do evento em sua versão negativa</figcaption>
+      </figure>
+    </div>
+    <div>
+      <div>
+        <small class="caption of-footer">Design &amp; frontend by <a href="http://guavasoftware.com.br">Guava Software</a></small>
+      </div>
+      <div>
+        <p class="description of-footer"><a target="_blank" href="code-of-conduct.html"> Código de Conduta</a> - Edições Anteriores: <a href="http://tropicalrb.com/">2015</a>  | <a href="http://tropicalrb.com/2014/en/">2014</a> | <a href="http://tropicalrb.com/2013/">2013</a> | <a href="http://tropicalrb.com/2012/">2012</a></p>
+      </div>
+    </div>
+
+    <div class="sponsorship">
+      <div>
+        <div>
+          <small class="caption of-footer">Realizadores</small>
+        </div>
+        <div class="grid of footer is-flex">
+          <figure class="icon at-footer of-guava">
+            <img src="images/guava.svg" alt="Marca do Evento">
+            <figcaption class="has-hidden-font">Logo da Guava Software em sua versão negativa</figcaption>
+          </figure>
+          <figure class="icon at-footer of-inloco">
+            <img src="images/inloco-logo-negative.svg" alt="Marca do Evento">
+            <figcaption class="has-hidden-font">Logo da in loco em sua versão negativa</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="is-support">
+        <div>
+          <small class="caption of-footer">Apoio</small>
+        </div>
+        <figure class="icon at-footer">
+          <img src="images/babylon.svg" alt="Marca do Evento">
+          <figcaption class="has-hidden-font">Logo da babylon em sua versão negativa</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+</footer>
