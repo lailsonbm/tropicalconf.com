@@ -29,6 +29,7 @@ body {
     max-width: 1280px;
     margin: auto;
     @media (max-width: 560px) { width: 100%; }
+    &.at-secondary-pages {  min-height: 100vh; }
   }
   &.at-left {
     position: absolute;
@@ -80,6 +81,7 @@ body {
 
   }
   &.of-footer {
+    bottom: 0;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 40px;
