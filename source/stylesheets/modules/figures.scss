@@ -69,7 +69,7 @@
     @media (max-width: 1140px) {width: 500px;}
     @media (max-width: 950px) {
       width: 400px;
-      margin-top: 80px;
+      margin-top: 140px;
     }
   }
   &.of-tropicalconf-brand {
@@ -95,23 +95,6 @@
         margin: 0;
       }
     }
-    // &.is-selected::after {
-    //   position: relative;
-    //   bottom: 226px;
-    //   left: -9px;
-    //   z-index: 999;
-    //   display: inline-block;
-    //   width: 180px;
-    //   height: 180px;
-    //   margin-bottom: -220px;
-    //   border: 4px #ff5512 solid;
-    //   border-radius: 100px;
-    //   content: "";
-    //   @media (max-width: 800px) {
-    //     width: 140px;
-    //     height: 140px;
-    //   }
-    // }
 
     &.is-active {
       display: block;
