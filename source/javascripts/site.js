@@ -14,4 +14,16 @@ $(function() {
     prevNextButtons: false,
     pageDots: false
   });
+
+  (function changeBackgroundOnTime() {
+    function isDark() {
+      var currentTime = new Date().getHours();
+
+      return (6 >= currentTime && currentTime > 20);
+    }
+
+    if (isDark()) {
+      document.body.classList.add('is-dark');
+    }
+  })();
 });

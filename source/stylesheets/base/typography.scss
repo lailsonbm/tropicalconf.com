@@ -110,6 +110,12 @@ a {
     padding: 0;
     color: $link-hover-color;
   }
+
+  &.is-social {
+    .is-dark & {
+      color: $white;
+    }
+  }
 }
 
 .button-link {
@@ -160,6 +166,10 @@ li { font-size: .9rem; }
     &.is-intern-tittle {
       margin: 50px;
     }
+  }
+
+  .is-dark & {
+    color: $white;
   }
 }
 

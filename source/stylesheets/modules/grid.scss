@@ -10,6 +10,9 @@ body {
   overflow-x: hidden;
   background: url("/images/background.png");
   background-color: $white;
+  transition: background-color 4s;
+
+  &.is-dark { background-color: $dark-blue; }
 }
 
 
